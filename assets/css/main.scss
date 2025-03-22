@@ -1,0 +1,72 @@
+---
+---
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* Custom Fantasy Theme Styles */
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: "Crimson Text", serif;
+}
+
+.page__title {
+    font-family: "MedievalSharp", cursive;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav__items {
+    font-family: "MedievalSharp", cursive;
+}
+
+.sidebar {
+    background: rgba(0, 0, 0, 0.8);
+    border-right: 2px solid #4a4a4a;
+}
+
+code {
+    background: #2d2d2d;
+    border: 1px solid #3d3d3d;
+}
+
+.notice {
+    background: rgba(70, 70, 70, 0.5);
+    border-left: 4px solid #ffd700;
+}
+
+/* Fantasy Decorative Elements */
+.page__title::before {
+    content: "🗡️";
+    margin-right: 10px;
+}
+
+.page__title::after {
+    content: "🛡️";
+    margin-left: 10px;
+}
+
+/* Link Styles */
+a {
+    color: #ffd700;
+    text-decoration: none;
+    
+    &:hover {
+        color: #ffed4a;
+        text-decoration: underline;
+    }
+}
+
+/* Button Styles */
+.btn {
+    background: #4a4a4a;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    font-family: "MedievalSharp", cursive;
+    
+    &:hover {
+        background: #ffd700;
+        color: #1a1a1a;
+    }
+}
