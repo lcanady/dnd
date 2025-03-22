@@ -1,0 +1,70 @@
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+title: "DeFi & Dragons"
+subtitle: "Where Magic Meets DeFi"
+description: "Embark on an epic journey through the mystical realm of DeFi & Dragons"
+url: "https://lcanady.github.io"
+baseurl: "/dnd"
+repository: "lcanady/dnd"
+
+# Theme settings
+minimal_mistakes_skin: "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Author
+author:
+  name: "DeFi & Dragons"
+  avatar: "/assets/images/dragon-logo.png"
+  bio: "Your guide through the mystical realms of DeFi"
+  links:
+    - label: "Discord"
+      icon: "fab fa-fw fa-discord"
+      url: "https://discord.gg/defi-dragons"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/defidragons"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/defi-dragons"
+
+# Defaults
+defaults:
+  # _docs
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: single
+      classes: wide
+      sidebar:
+        nav: "docs"
+      share: false
+
+# Navigation
+docs:
+  - title: Getting Started
+    children:
+      - title: "First Steps"
+        url: /getting-started/
+  - title: Gameplay Guide
+    children:
+      - title: "Basic Mechanics"
+        url: /gameplay/
+  - title: DeFi Mechanics
+    children:
+      - title: "Introduction"
+        url: /defi/
+  - title: Advanced Mechanics
+    children:
+      - title: "Advanced Topics"
+        url: /advanced-mechanics/
+  - title: API Reference
+    children:
+      - title: "API Docs"
+        url: /api-reference/
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
